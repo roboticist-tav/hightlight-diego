@@ -1,0 +1,15 @@
+use_namespace(hightlighttest);
+
+with_robot(alif)_exec(hightlighttest)
+    add_var(var1)_value(58)
+;
+
+// line comment
+ms_msg()_calc([var1]+5);  // end of line comment
+
+/* block comment
+**
+**
+*/
+
+reset_ns[];
